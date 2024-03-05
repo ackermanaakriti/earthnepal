@@ -8,7 +8,10 @@ module.exports = {
         PrimaryRed: "#D22828",
         dark: "#1E293B",
         textC:'#0D2C40',
-        bgGray: '#EBF0F3'
+        bgGray: '#EBF0F3',
+        star:'#FFAD36',
+        hueBlue:'#5C7A8C',
+        bbb: 'rgba(66, 91, 107, 0.06)'
 
       },
       fontFamily:

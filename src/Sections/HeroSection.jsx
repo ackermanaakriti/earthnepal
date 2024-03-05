@@ -24,8 +24,14 @@ const HeroSection = () => {
       <span className='text-[20px] text-textC pr-[5px] '> <MdNordicWalking/> </span>
       {console.log(items)}
       <select className=' uppercase outline-none bg-transparent pr-9 text-[16px]'>
+      <option selected disabled>{items.title}</option>
         {items?.option?.map((op, ind) => (
-          <option className='uppercase' key={ind}>{op.value}</option>
+          <>
+                      
+                    <option  className='uppercase' key={ind}>{op.value}</option>
+                    
+
+          </>
         ))}
       </select>
     </div>

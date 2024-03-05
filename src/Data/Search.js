@@ -1,22 +1,27 @@
 export const searchVar = [
     {
         icon:'MdNordicWalking ',
+        title:'DESTINATION',
+        
       option: [
-        {value:'DESTINATION'},
+
+       
         { value: 'pokhara' },
         { value: 'kathmandu' }
       ]
     },
     {
+      title:'ACTIVITY',
       option: [
-        {value:'ACTIVITY'},
+        
         { value: 'pokhara' },
         { value: 'kathmandu' }
       ]
     },
     {
+      title:'COUNTRY',
       option: [
-        {value:'COUNTRY'},
+        
         { value: 'pokhara' },
         { value: 'kathmandu' }
       ]
