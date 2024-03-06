@@ -9,7 +9,7 @@ const Reviews = () => {
   
     <div className='container mx-auto py-[50px]'>
         <div className='grid grid-cols-6'>
-            <div className='form col-span-2'>
+            <div className='form col-span-3'>
             <div className='flex items-center gap-[20px] py-[10px]'>
                 <img className='object-cover h-[100%]' src={'./images/comma.png'}/>
                 <div>
@@ -21,13 +21,13 @@ const Reviews = () => {
                 <ReviewForm/>
             </div>
            
-            <div className='col-span-4'>
-                <div className='flex justify-end'>
+            <div className='col-span-3'>
+                <div className='flex justify-center pt-[20px] relative'>
                     <figure className='figureA'>
-                        <img src={'./images/imageA.jpg'}/>
+                        <img src={'./images/imagess.jpg'}/>
                     </figure>
                     <figure className='figureB'>
-                        <img src={'./images/imageA.jpg'}/>
+                        <img src={'./images/image6.jpg'}/>
                     </figure>
                 </div>
 

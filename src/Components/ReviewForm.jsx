@@ -2,6 +2,8 @@ import React from 'react'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
 import { FaStar } from "react-icons/fa";
+import { MdUpload } from "react-icons/md";
+
 
 const ReviewForm = () => {
   return (
@@ -33,7 +35,7 @@ const ReviewForm = () => {
     >
         {
             formik=>(
-                <form onSubmit={formik.handleSubmit} className='review--form'>
+                <form onSubmit={formik.handleSubmit} className='review--form w-[60%]'>
                     <div className='col-span-2'>
                         <label className='block'>Full Name <span>*</span></label>
                         <input type='text' onChange={formik.handleChange} value={formik.values.fullname} placeholder='John Doe'/>
@@ -47,22 +49,26 @@ const ReviewForm = () => {
                         <label className='block'>Nationality <span>*</span></label>
                        
                         <select onChange={formik.handleBlur} value={formik.values.nationality}>
-                            <option>Country</option>
-                            <option>Nepal</option>
-                            <option>Nepal</option>
+                            <option disabled selected className='text-textC text-[16px] '> Country</option>
+                            <option className='text-textC text-[16px] '>Nepal</option>
+                            <option>India</option>
                         </select>
                     </div>
                     </div>
                     <div className='grid grid-cols-4 gap-4 pt-[15px]'>
-                    <div className='col-span-2'>
-                        <label className='block'>Upload your photo <span>*</span></label>
-                        <span className='inputfilespan'>Upload you file</span>
-                        <input className='inputfile' type='file' onChange={formik.handleChange} value={formik.values.fullname} placeholder='John Doe'/>
+                    <div className='col-span-2 inputdiv'>
+                        <label for='inputfile' className='block  '>Upload your photo <span>*</span></label>
+                        <div className='relative'>
+                        <input id='inputfile' className='inputfile ' type='file' onChange={formik.handleChange} value={formik.values.fullname} placeholder='John Doe'/>
+                        <span  className='inputfilespan'>Upload Photo <span><MdUpload/></span> </span>
+
+                        </div>
+
                         
                     </div>
                     <div className='col-span-2'>
                         <label className='block'>Rate Us <span>*</span></label>
-                       <span className='flex gap-[5px] text-[20px] text-hueBlue'><FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/></span>
+                       <span className='flex gap-[5px] text-[18px] items-center text-hueBlue'><FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/></span>
                     </div>
                     </div>
                     <div className='col-span-2 pt-[15px]'>

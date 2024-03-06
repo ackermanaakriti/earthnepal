@@ -11,7 +11,8 @@ module.exports = {
         bgGray: '#EBF0F3',
         star:'#FFAD36',
         hueBlue:'#5C7A8C',
-        bbb: 'rgba(66, 91, 107, 0.06)'
+        bbb: 'rgba(66, 91, 107, 0.06)',
+        darkblue:'rgba(29, 46, 80, 1)'
 
       },
       fontFamily:
