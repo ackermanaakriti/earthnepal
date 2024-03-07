@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from "react";
 import Navbar from "../Global/Navbar";
+import Footer from "../Global/Footer";
 
 const LayoutContext = createContext();
 
@@ -12,6 +13,7 @@ export const LayoutProvider=({children})=>
             <Navbar/>
              {children}
         </LayoutContext.Provider>
+        <Footer/>
         </>
         
     )

@@ -20,7 +20,7 @@ const Homepage = () => {
    <TestimonialSwiper/>
    <DiscountTable/>
    <PhotoGallery/>
-   <VideoGalleryy/>
+   {/* <VideoGalleryy/> */}
    </>
   )
 }

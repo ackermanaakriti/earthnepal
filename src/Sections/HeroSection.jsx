@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className='grid grid-cols-4 gap-4 mt-[40px] items-center'>
         {
   searchVar?.map((items, index) => (
-    <div className='  shadow-lg searchbuttons' key={index}>
+    <div className=' bg-white  shadow-lg searchbuttons' key={index}>
       <span className='text-[20px] text-textC pr-[5px] '> <MdNordicWalking/> </span>
       {console.log(items)}
       <select className=' uppercase outline-none bg-transparent pr-9 text-[16px]'>
