@@ -509,11 +509,44 @@ background: linear-gradient(61deg, rgba(210,40,40,1) 36%, rgba(251,199,199,1) 50
 
   .footer 
   {
+    .react-tabs
+    {
+      ul 
+      {
+        border-bottom: none;
+        gap:20px;
+        display: flex;
+        .react-tabs__tab--selected
+        {
+         border-bottom: 5px solid rgba(255, 214, 67, 1) !important; 
+       
+        }
+        li 
+        {
+          background-color: transparent;
+          color:white;
+          border: none;
+          &:active 
+          {
+           border-bottom: 5px solid rgba(255, 214, 67, 1) !important; 
+ 
+          }
+          
+          span 
+          {
+            display: flex;
+            align-items: center;
+            gap:8px;
+          }
+        }
+      }
+    }
     .footer-form
     {
       background-color: rgba(255, 255, 255, 1);
       padding:30px;
       border-radius: 4px;
+      margin-top:40px;
       input 
       {
         width: 100%;
